@@ -1,7 +1,19 @@
 {
 	"private": true,
-	"devDependencies": {
-		"lerna": "^2.9.0"
+	"scripts": {
+		"build": "lerna exec --parallel -- babel src -d dist",
+		"bootstrap": "lerna bootstrap"
 	},
-	"workspaces": ["packages/*"]
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"lerna": "^2.9.0",
+		"tailwindcss": "^0.4.3"
+	},
+	"workspaces": [
+		"packages/*"
+	],
+	"dependencies": {
+		"lodash": "^4.17.5"
+	}
 }
