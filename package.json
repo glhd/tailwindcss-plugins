@@ -1,8 +1,11 @@
 {
 	"private": true,
 	"scripts": {
+		"prepublish": "yarn run build",
 		"build": "lerna exec --parallel -- babel src -d dist",
-		"bootstrap": "lerna bootstrap"
+		"bootstrap": "lerna bootstrap",
+		"canary": "yarn run build && lerna publish --canary",
+		"publish": "yarn run build && lerna publish"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
