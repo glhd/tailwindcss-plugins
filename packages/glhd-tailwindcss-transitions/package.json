@@ -1,9 +1,9 @@
 {
   "name": "glhd-tailwindcss-transitions",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/glhd/tailwindcss-plugins",
   "author": "Chris Morrell",
   "license": "MIT",
-  "private": false
+  "private": false,
 }

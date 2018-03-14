@@ -1,1 +1,1 @@
-[See main README](https://github.com/glhd/tailwindcss-plugins)
+../../README.md
