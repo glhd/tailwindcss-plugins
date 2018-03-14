@@ -1,5 +1,7 @@
 # A Collection of Tailwind Plugins
 
+[Documentation (work in progress)](https://glhd.github.io/tailwindcss-plugins/)
+
 ## Transitions
 
 Installation:

@@ -1,16 +1,24 @@
 {
+  "name": "glhd-tailwindcss-docs",
+  "version": "0.0.0",
   "homepage": "https://glhd.github.io/tailwindcss-plugins/",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^8.1.0",
+    "concurrently": "^3.5.1",
+    "postcss-cli": "^5.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0",
+    "react-loadable": "^5.3.1",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "yarn run tailwind && react-scripts start",
+    "dev": "concurrently 'yarn run watch' 'yarn run start'",
+    "start": "react-scripts start",
     "build": "yarn run tailwind && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "tailwind": "../../node_modules/.bin/tailwind build ./src/tailwind.css -c ./tailwind.js -o ./src/generated.css"
+    "tailwind": "../../node_modules/.bin/tailwind build ./src/tailwind.css -c ./tailwind.js -o ./src/generated.css",
+    "watch": "postcss src/tailwind.css -o src/generated.css -w --verbose"
   }
 }
