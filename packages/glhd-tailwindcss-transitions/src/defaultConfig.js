@@ -1,5 +1,6 @@
 export default {
-	transitionPrefix: 'transition',
+	transitionPrefix: '.transition',
+	transitionVariants: [],
 	transitionDuration: {
 		default: '.25s',
 		'slower': '.75s',
