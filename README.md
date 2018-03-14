@@ -123,7 +123,7 @@ Configuration:
 
 You can configure the `.transition` prefix, Tailwind variants, and utility options by passing a configuration object to the plugin.
 
-[See the default config](https://github.com/glhd/tailwindcss-plugins/blob/master/packages/glhd-tailwindcss-transitions/src/defaultConfig.js) for
+[See the default config](packages/glhd-tailwindcss-transitions/src/defaultConfig.js) for
 all options. You can either set these in your main Tailwind config file, or pass them into the plugin when you add it to Tailwind.
 
 
