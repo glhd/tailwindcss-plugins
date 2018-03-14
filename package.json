@@ -2,21 +2,21 @@
 	"private": true,
 	"scripts": {
 		"prepublish": "yarn run build",
-		"build": "lerna exec --parallel -- babel src -d dist",
+		"build": "lerna exec --parallel -- yarn run build",
 		"bootstrap": "lerna bootstrap",
 		"canary": "yarn run build && lerna publish --canary",
-		"publish": "yarn run build && lerna publish"
+		"publish": "yarn run build && lerna publish",
+		"docs": "yarn run build && cp -rf packages/docs/build/* docs/"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
 		"babel-preset-env": "^1.6.1",
 		"lerna": "^2.9.0",
-		"tailwindcss": "^0.4.3"
+		"tailwindcss": "^0.5.1"
 	},
 	"workspaces": [
 		"packages/*"
 	],
 	"dependencies": {
-		"lodash": "^4.17.5"
 	}
 }
