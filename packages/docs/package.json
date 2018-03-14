@@ -7,9 +7,10 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn run tailwind && react-scripts start",
+    "build": "yarn run tailwind && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tailwind": "../../node_modules/.bin/tailwind build ./src/tailwind.css -c ./tailwind.js -o ./src/generated.css"
   }
 }
