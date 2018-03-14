@@ -1,4 +1,5 @@
 {
+  "homepage": "https://glhd.github.io/tailwindcss-plugins/",
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
