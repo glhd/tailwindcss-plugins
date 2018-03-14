@@ -6,4 +6,7 @@
   "author": "Chris Morrell",
   "license": "MIT",
   "private": false,
+  "scripts": {
+  	"prepublish": "cp -f ../../README.md ./README.md"
+  }
 }
