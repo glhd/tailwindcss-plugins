@@ -1,6 +1,6 @@
 {
   "name": "glhd-tailwindcss-docs",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "homepage": "https://glhd.github.io/tailwindcss-plugins/",
   "private": true,
   "dependencies": {
