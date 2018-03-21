@@ -1,5 +1,7 @@
 # A Collection of Tailwind Plugins
 
+[Documentation (work in progress)](https://glhd.github.io/tailwindcss-plugins/)
+
 ## Transitions
 
 Installation:
@@ -12,13 +14,13 @@ Usage:
 
 ```js
 // In your tailwind config
-
 {
   plugins: [
-    require('glhd-tailwindcss-transitions')(/* Custom config can go here */),
+    require('glhd-tailwindcss-transitions')(),
   ],
 }
 ```
+
 
 By default, the plugin provides the following utilities:
 
@@ -115,3 +117,12 @@ By default, the plugin provides the following utilities:
   transition-delay: 0s;
 }
 ```
+
+Configuration:
+
+You can configure the `.transition` prefix, Tailwind variants, and utility options by passing a configuration object to the plugin.
+
+[See the default config](packages/glhd-tailwindcss-transitions/src/defaultConfig.js) for
+all options. You can either set these in your main Tailwind config file, or pass them into the plugin when you add it to Tailwind.
+
+
