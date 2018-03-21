@@ -25,6 +25,19 @@ import transitionsPlugin from 'glhd-tailwindcss-transitions';
 }
 ```
 
+Using require() syntax:
+
+```js
+// In your tailwind config
+
+{
+  plugins: [
+    require('glhd-tailwindcss-transitions').default(),
+  ],
+}
+```
+
+
 By default, the plugin provides the following utilities:
 
 ```css
