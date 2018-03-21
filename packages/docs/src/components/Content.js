@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
 const load = (name) => Loadable({
@@ -8,12 +8,12 @@ const load = (name) => Loadable({
 });
 
 export default class Content extends Component {
-  render() {
-    return (
-		<div className="flex flex-grow p-4">
-  			{/* <Route exact path="/" component={ load('Overview') } /> */ }
-  			<Route path="/" component={ load('Transitions') } />
-  		</div>
-    );
-  }
+	render() {
+		return (
+			<div className="flex flex-grow p-4">
+				{ /* <Route exact path="/" component={ load('Overview') } /> */ }
+				<Route path="/" component={ load('Transitions') } />
+			</div>
+		);
+	}
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Link, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Sidebar from './Sidebar';
 import Content from './Content';
@@ -10,14 +10,14 @@ const load = (name) => Loadable({
 });
 
 export default class App extends Component {
-  render() {
-    return (
-		<Router>
-			<div className="container flex min-h-screen">
-				<Sidebar />
-				<Content />
-			</div>
-		</Router>
-    );
-  }
+	render() {
+		return (
+			<Router>
+				<div className="container flex min-h-screen">
+					<Sidebar />
+					<Content />
+				</div>
+			</Router>
+		);
+	}
 }
