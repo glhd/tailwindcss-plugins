@@ -11,6 +11,10 @@ export default class Sidebar extends Component {
 				{ /* <NavItem to="/" exact>Home</NavItem> */ }
 				<NavItem to="/transitions">Transitions</NavItem>
 				
+				<a href="https://github.com/glhd/tailwindcss-plugins" target="_blank" className="block mb-2">
+					Github
+				</a>
+				
 				<hr className="my-8 border-t border-grey-light" />
 				
 				<div className="text-grey italics">
