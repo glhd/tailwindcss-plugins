@@ -12,13 +12,10 @@ Usage:
 
 ```js
 // In your tailwind config
-import transitionsPlugin from 'glhd-tailwindcss-transitions';
-
-// ...
 
 {
   plugins: [
-    transitionsPlugin(),
+    require('glhd-tailwindcss-transitions')(/* Custom config can go here */),
   ],
 }
 ```

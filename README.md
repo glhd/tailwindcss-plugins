@@ -14,25 +14,9 @@ Usage:
 
 ```js
 // In your tailwind config
-import transitionsPlugin from 'glhd-tailwindcss-transitions';
-
-// ...
-
 {
   plugins: [
-    transitionsPlugin(),
-  ],
-}
-```
-
-Using require() syntax:
-
-```js
-// In your tailwind config
-
-{
-  plugins: [
-    require('glhd-tailwindcss-transitions').default(),
+    require('glhd-tailwindcss-transitions')(),
   ],
 }
 ```
